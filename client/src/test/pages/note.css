@@ -1,0 +1,75 @@
+/* App styling */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 0;
+}
+
+.drag-board {
+  min-width:  1000px;
+  background-color: white;
+  height: 600px;
+  border-radius: 8px;
+  padding: 1.5rem;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.drag-card {
+  position: absolute;
+  width: 220px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  cursor: move;
+  user-select: none;
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.drag-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  transform: scale(1.02);
+}
+
+.drag-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding-right: 25px;
+}
+
+.drag-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.drag-handle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: grab;
+}
